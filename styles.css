@@ -1,1 +1,73 @@
 /* your code */
+*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:20px;
+        }
+
+        .table-container{
+            width:100%;
+            max-width:1200px;
+            overflow-x:auto;
+            border-radius:15px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        thead{
+            background:#0d5c96;
+            color:white;
+        }
+
+        th, td{
+            padding:20px;
+            text-align:center;
+            font-size:18px;
+        }
+
+        th{
+            font-weight:bold;
+            letter-spacing:1px;
+        }
+
+        tbody tr:nth-child(even){
+            background:#e0e0e0;
+        }
+
+        tbody tr:nth-child(odd){
+            background:#f8f8f8;
+        }
+
+        tbody tr:hover{
+            background:#cfd8dc;
+            transition:0.3s;
+        }
+
+        td:first-child,
+        th:first-child{
+            text-align:left;
+            padding-left:25px;
+        }
+
+        @media (max-width:768px){
+            th, td{
+                padding:15px;
+                font-size:15px;
+            }
+        }
+    </style>
